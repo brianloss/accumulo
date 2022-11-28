@@ -41,6 +41,8 @@ More resources can be found on the [project website][accumulo].
 
 ## Building
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=codespaces&repo=571724681)
+
 Accumulo uses [Maven] to compile, [test], and package its source. The following
 command will build the binary tar.gz from source. Add `-DskipTests` to build without
 waiting for the tests to run.
