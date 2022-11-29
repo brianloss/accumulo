@@ -23,6 +23,17 @@
     // Uncomment to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
     // "remoteUser": "root",
 
+    "mounts": [
+        // Mount the local user's .m2/repository folder into /home/accumulo/.m2/repository.
+        // If the remoteUser value is changed, then the target of this mount needs to be updated
+        // for the Maven repo from the host to continue to be accessible. 
+        {
+            "type": "bind",
+            "source": "${localEnv:HOME}/.m2/repository",
+            "target": "/home/accumulo/.m2/repository"
+        }
+    ],
+
     "customizations": {
         "codespaces": {
             "openFiles": [
